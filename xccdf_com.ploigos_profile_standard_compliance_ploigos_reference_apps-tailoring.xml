@@ -16,6 +16,7 @@
   <xccdf:Profile id="xccdf_com.ploigos_profile_default_compliance_ploigos_reference_quarkus_mvn" extends="xccdf_org.ssgproject.content_profile_standard">
     <xccdf:title xml:lang="en-US" override="true">Cutomized Standard Compliance Profile for the ploigos-references/reference-quarkus-mvn project</xccdf:title>
     <xccdf:description xml:lang="en-US">Profile used with https://github.com/ploigos-reference-apps to work around Compliance issues that can't be remediated.</xccdf:description>
+    <xccdf:select idref="xccdf_org.ssgproject.content_rule_dir_perms_world_writable_sticky_bits" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_rpm_verify_permissions" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_security_patches_up_to_date" selected="false"/>
     <xccdf:select idref="xccdf_org.ssgproject.content_rule_rpm_verify_hashes" selected="false"/>
